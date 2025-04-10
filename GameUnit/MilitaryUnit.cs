@@ -1,3 +1,4 @@
+
 namespace GameUnit
 {
     public class MilitaryUnit : Unit // Heranca!!
@@ -19,5 +20,6 @@ namespace GameUnit
             XP++;
             u.Health -= AttackPower;
         }
+
     }
 }
