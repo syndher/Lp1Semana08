@@ -8,13 +8,13 @@ classDiagram
         Name: name
     }
     class Weapon{
-        Power: power
+        float Power: power
     }
     class Sword{
-        BladeLength: bladelength
+        float BladeLength: bladelength
     }
     class Gun{
-        Ammo: ammo
+        int Ammo: ammo
     }
     class Player{
 
@@ -27,5 +27,8 @@ classDiagram
     Character <|-- Enemy
     Weapon  <|-- Gun
     Weapon  <|-- Sword
+    Character o--> Weapon
+    Program o--> Character
+
 
 ``` 
