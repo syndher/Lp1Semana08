@@ -20,6 +20,10 @@ namespace GameUnit
             XP++;
             u.Health -= AttackPower;
         }
+        public override string ToString()
+        {
+            return $"MilitaryUnit: HP={Health} Cost={Cost:f2} AP={AttackPower} XP={XP}";
+        }
 
     }
 }

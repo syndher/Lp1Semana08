@@ -19,6 +19,10 @@ namespace GameUnit
         {
             Console.WriteLine($"This unit moved {movement.ToRoman()}");
         }
+        public override string ToString()
+        {
+            return $"SettlerUnit: HP={Health} Cost={Cost:f2}";
+        }
 
     }
 }
